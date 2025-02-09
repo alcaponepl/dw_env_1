@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>2D</h1>
+    <h2 class="subtitle">2D Visualization Lessons</h2>
+    <div class="grid">
+        <% examplesLinks.filter(example => example.category === '2D').forEach(function(example) { %>
+        <a href="<%= example.url %>" class="slider-item">
+            <div class="slider-image-wrapper">
+                <div class="slider-image"></div>
+            </div>
+            <div class="slider-item-content">
+                <h2><%= example.title %></h2>
+                <p><%= example.creationDate %></p>
+            </div>
+        </a>
+        <% }); %>
+    </div>
+    <br>
+    <br>
+    <h1>3D</h1>
+    <h2 class="subtitle">3D Visualization Lessons</h2>
+    <div class="grid">
+        <% examplesLinks.filter(example => example.category === '3D').forEach(function(example) { %>
+        <a href="<%= example.url %>" class="slider-item">
+            <div class="slider-image-wrapper">
+                <div class="slider-image"></div>
+            </div>
+            <div class="slider-item-content">
+                <h2><%= example.title %></h2>
+                <p><%= example.creationDate %></p>
+            </div>
+        </a>
+        <% }); %>
+    </div>
+    <br>
+    <br>
+    <h1>Projects</h1>
+    <h2 class="subtitle">Summary Projects</h2>
+    <div class="grid">
+        <% examplesLinks.filter(example => example.category === 'Projects').forEach(function(example) { %>
+        <a href="<%= example.url %>" class="slider-item">
+            <div class="slider-image-wrapper">
+                <div class="slider-image"></div>
+            </div>
+            <div class="slider-item-content">
+                <h2><%= example.title %></h2>
+                <p><%= example.creationDate %></p>
+            </div>
+        </a>
+        <% }); %>
+    </div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "threejs-webpack-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "d3": "^7.9.0",
+    "gl-matrix": "^3.4.3",
+    "gsap": "^3.12.7",
+    "leaflet": "^1.9.4",
+    "three": "^0.172.0",
+    "vanilla-tilt": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@types/d3": "^7.4.3",
+    "@types/leaflet": "^1.9.16",
+    "@types/three": "^0.172.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "prettier-plugin-organize-attributes": "^1.0.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

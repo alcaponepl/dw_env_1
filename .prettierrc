@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "prettier-plugin-organize-attributes"
+  ],
+  "singleQuote": true,
+  "arrowParens": "always",
+  "printWidth": 140,
+  "quoteProps": "consistent",
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSpacing": true,
+  "attributeSort": "ASC",
+  "endOfLine": "auto",
+  "attributeGroups": [
+    "$ANGULAR_STRUCTURAL_DIRECTIVE",
+    "$ANGULAR_ELEMENT_REF",
+    "$DEFAULT",
+    "$ANGULAR_INPUT",
+    "$ANGULAR_TWO_WAY_BINDING",
+    "$ANGULAR_OUTPUT"
+  ],
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
